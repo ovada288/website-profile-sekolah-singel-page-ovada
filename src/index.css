@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 96%;
+    --foreground: 215 25% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 17%;
+    --primary: 218 46% 19%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 20% 96%;
+    --secondary-foreground: 215 25% 17%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 42 50% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 10% 87%;
+    --input: 40 10% 87%;
+    --ring: 42 50% 54%;
+    --radius: 0.625rem;
+    --sidebar-background: 40 20% 96%;
+    --sidebar-foreground: 215 25% 17%;
+    --sidebar-primary: 218 46% 19%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 20% 96%;
+    --sidebar-accent-foreground: 215 25% 17%;
+    --sidebar-border: 40 10% 87%;
+    --sidebar-ring: 42 50% 54%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+  .font-label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
